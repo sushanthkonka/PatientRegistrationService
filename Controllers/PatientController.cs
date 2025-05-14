@@ -8,7 +8,7 @@ public class PatientController: ControllerBase
     [HttpGet("GetPatientInformation/{patientId}")]
   public IActionResult GetPatientInformation(int patientId)
   {
-    var patient = new
+    Patient patient = new Patient
         {
             Id = patientId,
             Name = "Sushanth",
@@ -17,4 +17,5 @@ public class PatientController: ControllerBase
         };
     return Ok(patient);
   }
+  
 }
