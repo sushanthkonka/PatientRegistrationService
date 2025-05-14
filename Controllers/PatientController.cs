@@ -17,5 +17,12 @@ public class PatientController: ControllerBase
         };
     return Ok(patient);
   }
+
+  [HttpPost ("Register")]
+  public IActionResult Register(Patient patient)
+  {
+    System.Console.WriteLine(patient.Id);
+    return Ok(patient);
+  }
   
 }
