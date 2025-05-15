@@ -8,21 +8,17 @@ public class PatientController: ControllerBase
     [HttpGet("GetPatientInformation/{patientId}")]
   public IActionResult GetPatientInformation(int patientId)
   {
-    Patient patient = new Patient
-        {
-            Id = patientId,
-            Name = "Sushanth",
-            Age = 25,
-            Diagnosis = "Hypertension"
-        };
+    Patient patient = new Patient();
+
+      
     return Ok(patient);
   }
 
   [HttpPost ("Register")]
-  public IActionResult Register(Patient patient)
-  {
-    System.Console.WriteLine(patient.Id);
-    return Ok(patient);
-  }
+  public IActionResult Register([FromBody] Patient patient)
+    {
+        // Console.WriteLine($"Received patient: {patient.FirstName} {patient.LastName}");
+        return Ok(patient);
+    }
   
 }
