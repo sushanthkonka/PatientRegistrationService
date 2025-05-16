@@ -24,6 +24,8 @@ public class Patient
 
       public string? Date_Of_Birth { get; set; }
 
+       public string? Country_Name{ get; set; }
+
       public List<string>? Medical_History { get; set; }
 
       public int Id { get; set; }
