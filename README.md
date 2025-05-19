@@ -19,7 +19,6 @@ cd your-repo
 
 ```bash
 dotnet tool install --global dotnet-ef
-  Verify Installation
 ```
 
 ---
@@ -28,12 +27,11 @@ dotnet tool install --global dotnet-ef
 
 ```bash
 dotnet ef
-You should see a list of EF Core CLI commands.
-Install Required NuGet Packages
-Ensure the following packages are installed:
+
 ```
 
 _You should see a list of EF Core CLI commands._
+Ensure the following packages are installed:
 
 ---
 
@@ -43,7 +41,6 @@ _You should see a list of EF Core CLI commands._
 dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-Alternatively, confirm they are present in the .csproj file:
 ```
 
 ---
@@ -75,13 +72,11 @@ dotnet restore
 
 ## ** Database Setup**
 
-Database Setup
-Create Initial Migration
 ### **1. Create Initial Migration**
-
+Apply Migration to Create Database
 ```bash
 dotnet ef migrations add InitialCreate
-Apply Migration to Create Database
+
 ```
 
 ---
