@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "5805724b-4b4a-45f4-9f15-91d1eb3aafea",
+		"name": "Patient_Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44958143"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5004/api/Patient/GetPatientInformation/2313",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5004/api/Patient/GetPatientInformation/2313",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5004",
+					"path": [
+						"api",
+						"Patient",
+						"GetPatientInformation",
+						"2313"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register working",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5004/api/Patient/GetPatientInformation/2313",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5004",
+					"path": [
+						"api",
+						"Patient",
+						"GetPatientInformation",
+						"2313"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Notworking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"First_Name\": \"John\",\r\n    \"Last_Name\": \"Doe\",\r\n    \"Phone_Number\": \"1234567890\",\r\n    \"Street_Address\": \"123 Main St\",\r\n    \"City_Address\": \"Columbus\",\r\n    \"State_Address\": \"Ohio\",\r\n    \"Zip_Code\": \"43210\",\r\n    \"Gender\": \"Male\",\r\n    \"Marital_Status\": \"Single\",\r\n    \"Insurance_Name\": \"ABC Health\",\r\n    \"Date_Of_Birth\": \"1990-01-01\",\r\n    \"country_Name\": \"USA\",\r\n    \"Medical_History\":[\"Diabetes\", \"Hypertension\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5004/api/Patient/GetPatientInformation/2313",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5004",
+					"path": [
+						"api",
+						"Patient",
+						"GetPatientInformation",
+						"2313"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://sk-patient-registration-form-react-ddhxgfhvgpcwbxdj.centralus-01.azurewebsites.net/api/Patient/Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_Name\": \"John\",\r\n  \"last_Name\": \"Doe\",\r\n  \"phone_Number\": \"1234567890\",\r\n  \"street_Address\": \"123 Main St\",\r\n  \"city_Address\": \"Columbus\",\r\n  \"state_Address\": \"Ohio\",\r\n  \"zip_Code\": \"43210\",\r\n  \"gender\": \"Male\",\r\n  \"marital_Status\": \"Single\",\r\n  \"insurance_Name\": \"ABC Health\",\r\n  \"date_Of_Birth\": \"1990-01-01\",\r\n  \"country_Name\": \"USA\",\r\n  \"medical_History\": [\"Diabetes\", \"Hypertension\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sk-patient-registration-form-react-ddhxgfhvgpcwbxdj.centralus-01.azurewebsites.net/api/Patient/Register",
+					"protocol": "https",
+					"host": [
+						"sk-patient-registration-form-react-ddhxgfhvgpcwbxdj",
+						"centralus-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Patient",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
